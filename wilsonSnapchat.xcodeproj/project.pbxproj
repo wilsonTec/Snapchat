@@ -13,9 +13,12 @@
 		58D59AEC29104D340044E056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D59AEA29104D340044E056 /* Main.storyboard */; };
 		58D59AEE29104D350044E056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D59AED29104D350044E056 /* Assets.xcassets */; };
 		58D59AF129104D350044E056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D59AEF29104D350044E056 /* LaunchScreen.storyboard */; };
+		58D59AF92910526F0044E056 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58D59AF82910526F0044E056 /* GoogleService-Info.plist */; };
+		EC4D5629CC2D2C59CE545183 /* Pods_wilsonSnapchat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B06D364A5E49A6B647CD9C /* Pods_wilsonSnapchat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09B06D364A5E49A6B647CD9C /* Pods_wilsonSnapchat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wilsonSnapchat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D59AE129104D340044E056 /* wilsonSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wilsonSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58D59AE429104D340044E056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58D59AE629104D340044E056 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		58D59AED29104D350044E056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D59AF029104D350044E056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D59AF229104D350044E056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D59AF82910526F0044E056 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62857A9ED0E1E285ECEFA4C9 /* Pods-wilsonSnapchat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wilsonSnapchat.release.xcconfig"; path = "Target Support Files/Pods-wilsonSnapchat/Pods-wilsonSnapchat.release.xcconfig"; sourceTree = "<group>"; };
+		E20993F238A19E07A11A6163 /* Pods-wilsonSnapchat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wilsonSnapchat.debug.xcconfig"; path = "Target Support Files/Pods-wilsonSnapchat/Pods-wilsonSnapchat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4D5629CC2D2C59CE545183 /* Pods_wilsonSnapchat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D8005DEC508F9F12BB1470E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E20993F238A19E07A11A6163 /* Pods-wilsonSnapchat.debug.xcconfig */,
+				62857A9ED0E1E285ECEFA4C9 /* Pods-wilsonSnapchat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		58D59AD829104D340044E056 = {
 			isa = PBXGroup;
 			children = (
 				58D59AE329104D340044E056 /* wilsonSnapchat */,
 				58D59AE229104D340044E056 /* Products */,
+				4D8005DEC508F9F12BB1470E /* Pods */,
+				73566B418C68711C05812118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,7 @@
 		58D59AE329104D340044E056 /* wilsonSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				58D59AF82910526F0044E056 /* GoogleService-Info.plist */,
 				58D59AE429104D340044E056 /* AppDelegate.swift */,
 				58D59AE629104D340044E056 /* SceneDelegate.swift */,
 				58D59AE829104D340044E056 /* ViewController.swift */,
@@ -67,6 +86,14 @@
 			path = wilsonSnapchat;
 			sourceTree = "<group>";
 		};
+		73566B418C68711C05812118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09B06D364A5E49A6B647CD9C /* Pods_wilsonSnapchat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58D59AF529104D350044E056 /* Build configuration list for PBXNativeTarget "wilsonSnapchat" */;
 			buildPhases = (
+				0AD5BED57BB90F3CDC2C0330 /* [CP] Check Pods Manifest.lock */,
 				58D59ADD29104D340044E056 /* Sources */,
 				58D59ADE29104D340044E056 /* Frameworks */,
 				58D59ADF29104D340044E056 /* Resources */,
+				FE0077F840A4125A103D37E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				58D59AF129104D350044E056 /* LaunchScreen.storyboard in Resources */,
+				58D59AF92910526F0044E056 /* GoogleService-Info.plist in Resources */,
 				58D59AEE29104D350044E056 /* Assets.xcassets in Resources */,
 				58D59AEC29104D340044E056 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AD5BED57BB90F3CDC2C0330 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wilsonSnapchat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0077F840A4125A103D37E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wilsonSnapchat/Pods-wilsonSnapchat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wilsonSnapchat/Pods-wilsonSnapchat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wilsonSnapchat/Pods-wilsonSnapchat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58D59ADD29104D340044E056 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		58D59AF629104D350044E056 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20993F238A19E07A11A6163 /* Pods-wilsonSnapchat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +382,7 @@
 		};
 		58D59AF729104D350044E056 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62857A9ED0E1E285ECEFA4C9 /* Pods-wilsonSnapchat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
